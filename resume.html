@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankur Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: linear 0.13s;
+            position: relative;
+            max-width: max-content;
+            border-radius: 5px;
+        }
+        nav ul li a::after {
+            content: '';
+            font-size: 1rem;
+            background: linear-gradient(90deg, #0162c8,#55e7fc);
+            height: 105%;
+            width: 0%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: 130ms;
+            border-radius: 5px;
+            z-index: 0;
+        }
+        nav ul li a:hover::after{
+            width: 105%;
+        }
+        nav ul li a:hover {
+            /* color: rgb(221, 166, 223); */
+            font-size: 1.02rem;
+        }
+        nav ul li a span{
+            position: relative;
+            z-index: 5;
+        }
+        nav ul li a:hover{
+            background: linear-gradient(90deg,#55e7fc,)#0162c8;
+            background-clip: text;
+        }
+
+        main hr {
+            border: 0;
+            height: 1px;
+            margin: 40px 84px;
+            background: #9c97f188;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .leftSection {
+            font-size: 2.6rem;
+            width: 60%;
+            text-align: center;
+            font-size: 60px;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .element {
+            color: coral;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 90vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 78vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 165px;
+        }
+
+        .img-top {
+            width: 34px;
+            position: relative;
+            top: -43px;
+            left: -15px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 55px;
+            left: -50px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 60px;
+            left: -50px;
+            width: 150px;
+            color: gray;
+        }
+
+        footer {
+            background-color: rgb(0, 17, 65);
+            height: 233px;
+        }
+
+        .footer {
+            display: flex;
+            margin: 23px 122px;
+        }
+        nav div ul li a::selection, 
+        main section div::selection{
+            background: rgb(255, 255, 255);
+            color:rgb(0, 0, 33);
+        }
+        main section div .purple::selection{
+            background: rgb(170, 107, 228);
+            color: rgb(0, 0, 33);
+        }
+        .element::selection{
+            background: coral;
+            color: rgb(0, 0, 33);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Ankur's Resume</div>
+            <div class="right">
+                <ul>
+                    <li><a href=""><span>Home</span></a></li>
+                    <li><a href=""><span>About</span></a></li>
+                    <li><a href=""><span>Services</span></a></li>
+                    <li><a href=""><span>Projects</span></a></li>
+                    <li><a href=""><span>Contact Me</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Ankur</span>
+                <div>and I am a passionate</div>
+                <span class="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="hacker2.gif" alt="">
+            </div>
+            <audio id="music" autoplay loop>
+                <source src="music.mp3" type="audio/mp3">
+            </audio>
+            <script>
+                var audio = document.getElementById("music");
+                audio.volume = 0.2;
+            </script>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What i have done so far</span>
+            <h1>
+                Work Experience
+            </h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img src="hacker.webp" class="img-top">
+                    <div class="vertical-title">
+                        HTML Developer (2024-2026)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="hacker.webp" class="img-top">
+                    <div class="vertical-title">
+                        HTML Developer (2024-2026)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="hacker.webp" class="img-top">
+                    <div class="vertical-title">
+                        HTML Developer (2024-2026)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="hacker.webp" class="img-top">
+                    <div class="vertical-title">
+                        HTML Developer (2024-2026)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <h3>Ankur's Resume Website</h3>
+            </div>
+            <div class="second"></div>
+            <div class="third"></div>
+            <div class="fourth"></div>
+        </div>
+    </footer>
+    <script src="types.js"></script>
+    <script>
+        var typed = new Typed('.element', {
+            strings: ['Cyber Security Analyst.', 'Network Engineer.', 'Web Developer.', 'Penetration Tester.', 'White Hat Hacker.'],
+            typeSpeed: 100,
+            loop: true
+        });
+    </script>
+
+</body>
+
+</html>
